@@ -3,15 +3,24 @@
 
 
 @inherits LayoutComponentBase
+@inject  NavigationManager Nav
+
 
 <div class="page">
-    <div class="sidebar">
+    <!--
+        <div class="sidebar">
+            <NavMenu/>
+        </div>
+    -->
+    
+    
+    <aside class="header bg-black">
         <NavMenu />
-    </div>
-
-    <main class="bg-[#fffffffb]">
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+    </aside>
+    <main class="bg-[#000]">
+        <div class="top-row px-4 bg-black">
+            <div class="flex items-center gap-4">
+            </div>
         </div>
 
         <article class="content px-4">
@@ -25,3 +34,5 @@
     <a href="" class="reload">Reload</a>
     <a class="dismiss">🗙</a>
 </div>
+
+
